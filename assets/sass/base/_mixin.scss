@@ -1,0 +1,11 @@
+@mixin fontStyle($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin buttonStyle($border, $bgColor, $color) {
+  border: $border;
+  background-color: $bgColor;
+  color: $color;
+}
