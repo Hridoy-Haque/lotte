@@ -1,0 +1,18 @@
+{
+  "folders": [
+	{
+		"name": "lotte",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "compressed",
+        "extensionName": ".css",
+        "savePath": "/assets/css"
+      }
+    ],
+    "liveSassCompile.settings.generateMap": false
+  }
+}

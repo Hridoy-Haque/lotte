@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;600&family=Nunito:wght@300;400;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@import "veriables";
+@import "mixins";
+//reset code
+
+*,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $nunita;
+}
+
+ul li {
+  list-style: none;
+}
+
+i {
+  line-height: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.navbar > .container {
+  flex-wrap: nowrap;
+}
+
+.title {
+  @include textStyle($normal-size, $main_color, 800, 3px);
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Fira Code", monospace;
+  &::after {
+    position: absolute;
+    content: "";
+    @include positions(auto, 0, auto, -3px);
+    width: 60%;
+    height: 2px;
+    background-color: $main_color;
+  }
+}
+
+.title_text {
+  @include textStyle($font-14, $fade_dark, 400, 3px);
+}
+
+.subtitle {
+  @include textStyle($font-24, $main_color, 700, 3px);
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.py-120 {
+  padding: 120px 0;
+}
+
+section {
+  position: relative;
+  overflow: hidden !important;
+  padding: 70px 0;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.logo-color {
+  color: $main_color;
+}
+
+button {
+  outline: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+}
+
+// input ======>
+
+
+input,
+textarea {
+  outline: 0;
+  padding-left: 15px;
+}
+
+.cmn_btn {
+  @include displayContent(inline-flex, center, center);
+  @include textStyle($font-14, $white, 400, 0);
+  padding: 14px 34px;
+  background-color: $main_color;
+  border-radius: 3px;
+  transition: 0.3s;
+
+  i {
+    transition: transform 0.3s;
+    margin-left: 3px;
+  }
+  &:hover {
+    background-color: $nevy_color;
+  }
+  &:hover i {
+    transform: translateX(3px);
+  }
+}
+
+
+
+// swiper-pagination ========>
+
+.swiper-pagination {
+  // margin-top: 110px;
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    &.swiper-pagination-bullet-active {
+      background-color: $main_color !important;
+    }
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  // background-color: red;
+}
+
+::-webkit-scrollbar-track {
+  background: $rgba_bg;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $main_color;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $nevy_color;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .py-120 {
+    padding: 90px 0;
+  }
+}

@@ -1,0 +1,89 @@
+//font sizes
+
+$normal-size: 16px;
+$font-12: 12px;
+$font-14: 14px;
+$font-18: 18px;
+$font-20: 20px;
+$font-24: 24px;
+$font-28: 28px;
+$font-32: 32px;
+$font-48: 48px;
+$font-38: 38px;
+$font-58: 58px;
+$font-64: 64px;
+
+//colors
+$white: #fff;
+$main_color: rgb(96, 84, 201);
+$nevy_color: #372f83;
+$green_color: #40b5b5;
+$dark_color: rgb(77, 74, 77);
+$black_color: rgb(14, 13, 13);
+$rgba_bg: rgba(160, 203, 255, 0.3);
+$fade_white: #f7f7f7;
+$fade_dark: #979797;
+$blue_light: #f6fdff;
+$red_color: #e45070;
+$bar-color: #fff;
+$ball-color: #fff;
+$bg-color: #ea4961;
+//font family
+
+$fira_code: "Fira Code", monospace;
+$nunita: "Nunito", sans-serif;
+$Source_sans: "Source Sans Pro", sans-serif;
+
+//page backgroud color
+
+// about us
+
+$about-us: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+//course
+
+$course: #1e0253;
+
+//blog
+
+$blog_bg: radial-gradient(
+  circle farthest-corner at 10% 20%,
+  rgba(234, 249, 249, 0.67) 0.1%,
+  rgba(239, 249, 251, 0.63) 90.1%
+);
+
+//events
+
+$events: linear-gradient(
+  109.6deg,
+  rgba(177, 173, 219, 1) 11.2%,
+  rgba(245, 226, 226, 1) 91.1%
+);
+
+$contact: linear-gradient(
+  174.2deg,
+  rgba(255, 244, 228, 1) 7.1%,
+  rgba(240, 246, 238, 1) 67.4%
+);
+
+//sign in
+
+$signin_bg: linear-gradient(
+  106.1deg,
+  rgba(69, 242, 143, 0.52) 10.2%,
+  rgba(14, 228, 175, 0.61) 83.6%
+);
+
+$signin_form: rgba(255, 255, 255, 0.4);
+$input: rgba(255, 255, 255, 0.6);
+
+$rgba_black: rgba(0, 0, 0, 0.1);
+
+//sign up
+
+$signup_bg: linear-gradient(to top, #b3ffab 0%, #12fff7 100%);
+$signup_img: rgba(170, 255, 224, 0.2);
+$signup_form: rgba(255, 255, 255, 0.3);
+$signin_inputs: rgba(255, 255, 255, 0.5);
+
+$signup_green: #04ff00;
